@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TimeUpdateActivity">
+    <TextView
+        android:id="@+id/info_tv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:text="test info"/>
+    <EditText
+        android:id="@+id/info_et"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="left|top"
+        android:hint="변경할 내용을 입력하세요."
+        android:maxLength="100"
+        android:layout_margin="20dp"/>
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="변경"/>
+
+</LinearLayout>

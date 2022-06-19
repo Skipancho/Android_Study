@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FragmentActivity"></activity>
+        <activity android:name=".TimeUpdateActivity"></activity>
+        <activity android:name=".FragmentActivity" />
         <activity android:name=".AsyncTaskActivity" />
         <activity android:name=".ChartActivity" />
         <activity android:name=".NextActivity" />
@@ -29,13 +30,14 @@
 
         <receiver android:name=".Widget_Provider">
             <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
-                <action android:name="android.action.MY_ACTION"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.action.MY_ACTION" />
             </intent-filter>
-            <meta-data android:name="android.appwidget.provider"
-                android:resource="@xml/widget_sample"/>
-        </receiver>
 
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_sample" />
+        </receiver>
     </application>
 
 </manifest>

@@ -40,14 +40,8 @@ public class NextActivity extends AppCompatActivity {
         et_1 = findViewById(R.id.et_1);
         tv_1 = findViewById(R.id.tv_1);
 
-
-
-
         //String url ="https://skipancho.github.io/test2/";
         // Request a string response from the provided URL.
-
-
-
 
         findViewById(R.id.btn_1).setOnClickListener(view -> {
             String text = et_1.getText().toString();
@@ -78,14 +72,7 @@ public class NextActivity extends AppCompatActivity {
            RequestQueue queue = Volley.newRequestQueue(this);
            queue.add(request);
         });
-
-
     }
-
-
-
-
-
 
     public void putExample(String key, Example example){
         SharedPreferences sharedPref = getSharedPreferences("example", Context.MODE_PRIVATE);
@@ -106,8 +93,6 @@ public class NextActivity extends AppCompatActivity {
         Example example = gson.fromJson(json,Example.class);
         return example;
     }
-
-
 
     public  void setList(String key, List<Example> productList){
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
